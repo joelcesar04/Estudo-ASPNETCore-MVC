@@ -2,6 +2,11 @@
     ViewData["Title"] = "Home Page";
 }
 
+<partial name="_AvisoGeral" />
+
+@* @await Html.PartialAsync("_AvisoGeral") *@
+<vc:carrinho></vc:carrinho>
+
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
