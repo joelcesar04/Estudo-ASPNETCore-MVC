@@ -13,8 +13,8 @@ namespace DemoMVC.Models
         public string Titulo { get; set; }
 
         [DataType(DataType.DateTime, ErrorMessage = "Data em formato incorreto.")]
-        [Required(ErrorMessage = "O campo Data de Lancaçamento é obrigatório.")]
-        [Display(Name = "Data de Lançamento.")]
+        [Required(ErrorMessage = "O campo Data de Lançamento é obrigatório.")]
+        [Display(Name = "Data de Lançamento")]
         public DateTime DataLancamento { get; set; }
 
         [RegularExpression(@"^[A-Z]+[a-zA-Z\u00C0-\u00FF""'\w-]*$", ErrorMessage = "Gênero em formato inválido.")]
